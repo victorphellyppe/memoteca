@@ -10,8 +10,10 @@
       id="pensamento"
       formControlName="conteudo"
       placeholder="Digite o pensamento"
-
     >
+    <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('conteudo')?.touched">
+      Pensamento é obrigatório.
+    </div>
     <label for="autoria">Autoria ou fonte</label>
     <input
       type="text"
@@ -21,6 +23,14 @@
       placeholder="Digite a autoria ou fonte"
 
     >
+    <div class="mensagem__erro" *ngIf="formulario.get('autoria')?.errors?.['required'] && formulario.get('autoria')?.touched">
+      Autoria é obrigatório.
+    </div>
+
+    <div class="mensagem__erro" *ngIf="formulario.get('autoria')?.errors?.['minlength']">
+      Autoria precisa no minimo de 3 caracteres.
+    </div>
+
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
@@ -51,7 +61,7 @@
             type="radio"
             id="modelo2"
             value="modelo2"
-            formControlName="modelo-card"
+            formControlName="modelo"
 
           >
           <div class="custom-radio">
@@ -73,7 +83,7 @@
             type="radio"
             id="modelo3"
             value="modelo3"
-            formControlName="modelo-card"
+            formControlName="modelo"
 
           >
           <div class="custom-radio">
@@ -84,8 +94,8 @@
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../../assets/imagens/modelo3.png" alt="Aspas verdes">
-          <p class="conteudo">{{ pensamento.conteudo }}</p>
-          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+          <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
+          <p class="autoria"><b>{{ formulario.get('autoria')?.value }}</b></p>
         </div>
       </div>
     </div>
