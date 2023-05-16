@@ -1,0 +1,40 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "A maioria pensa com a sensibilidade, e eu sinto com o pensamento. Para o homem vulgar, sentir é viver e pensar é saber viver. Para mim, pensar é viver e sentir não é mais que o alimento de pensar.",
+      "autoria": "William Shakespeare",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "O pensamento é o ensaio da ação.",
+      "autoria": "Sigmund Freud",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Os problemas significativos que enfrentamos não podem ser resolvidos no mesmo nível de pensamento em que estávamos quando os criamos.",
+      "autoria": "Albert Einstein",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 4,
+      "conteudo": "O pensamento é escravo da vida, e a vida é o bobo do tempo.",
+      "autoria": "William Shakespeare",
+      "modelo": "modelo2"
+    },
+    {
+      "conteudo": "Pensamento de teste em uma alucinação.",
+      "autoria": "teste",
+      "modelo": "modelo1",
+      "id": 5
+    },
+    {
+      "conteudo": "João cabeção",
+      "autoria": "Júlia",
+      "modelo": "modelo2",
+      "id": 6
+    }
+  ]
+}
